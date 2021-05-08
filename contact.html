@@ -1,67 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Meta aprasymas matomas Google paieskoje/facebook nuorods atvaizdavime ir tt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/style.css">
     <title>Padangųužsakymas</title>
-</head>
-<body>
 
-<section id="tireorder">
-    <img 
-    alt="logo"
-    width="150px"
-    src="https://www.creativefabrica.com/wp-content/uploads/2020/02/12/tire-logo-Ideas-Inspiration-logo-design-Graphics-1-1-580x387.jpg"/>
-    <h2>Padangų užklausos forma</h2>
-        <p>Pateikite užklausą ir mes jums pasiūlysime padangas geriausia kaina rinkoje!</p>
+  </head>
+  <body>
+    <section id="tireorder">
+      <img
+        alt="logo"
+        width="150px"
+        src="https://www.creativefabrica.com/wp-content/uploads/2020/02/12/tire-logo-Ideas-Inspiration-logo-design-Graphics-1-1-580x387.jpg"
+      />
+      <h2>Padangų užklausos forma</h2>
+      <p>
+        Pateikite užklausą ir mes jums pasiūlysime padangas geriausia kaina
+        rinkoje!
+      </p>
 
-    <form>
+      <form>
+        <div>
+          <label for="fname">Vardas:</label>
+        </div>
+        <input type="text" id="fname" name="fname" />
+        <div>
+          <label for="lname">Pavardė:</label>
+        </div>
+        <input type="text" id="lname" name="lname" />
+        <div>
+          <label for="email">El. Paštas:</label>
+        </div>
+        <input type="email" id="email" name="email" />
+        <div>
+          <label for="phone">Tel. Nr.::</label>
+        </div>
+        <input type="tel" id="phone" name="phone" required value="+370" />
+        <div>
+          <label for="tiretype"><b>Padangų tipas:</b></label>
+        </div>
+        <div>
+          <input type="radio" id="tire1" name="tireoption" value="summertire" />
+          <label for="tire1"> Vasarinės padangos</label>
+        </div>
+        <div>
+          <input type="radio" id="tire2" name="tireoption" value="wintertire" />
+          <label for="tire2"> Žieminės padangos</label>
+        </div>
+        <div>
+          <input
+            type="radio"
+            id="tire3"
+            name="tireoption"
+            value="allseasontire"
+          />
+          <label for="tire3"> Demisezonės padangos</label>
+        </div>
+        <div>
+          <label for="comment">Komentaras</label>
+        </div>
+        <textarea
+          id="comment"
+          name="comment"
+          placeholder="Kita reikalinga informacija ar pageidavimai"
+          style="height: 200px"
+        ></textarea>
 
-    <div>
-        <label for="fname">Vardas:</label>
-    </div>
-        <input type="text" id="fname" name="fname">
-    <div>
-        <label for="lname">Pavardė:</label>
-    </div>
-         <input type="text" id="lname" name="lname">
-    <div>
-        <label for="email">El. Paštas:</label>
-    </div>
-        <input type="email" id="email" name="email">
-    <div>
-        <label for="phone">Tel. Nr.::</label>
-    </div>
-        <input type="tel" id="phone" name="phone" required value="+370">
-    <div>
-        <label for="tiretype"><b>Padangų tipas:</b></label>
-    </div>
-        <input type="radio" id="tire1" name="tire1" value="summertire">
-        <label for="tire1"> Vasarinės padangos</label><br>
-        <input type="radio" id="tire2" name="tire2" value="wintertire">
-        <label for="tire2"> Žieminės padangos</label><br>
-        <input type="radio" id="tire3" name="tire3" value="allseasontire">
-    <label for="tire3"> Demisezonės padangos</label>
-    <div>
-        <label for="comment">Komentaras</label>
-    </div>
-        <textarea id="comment" name="comment" placeholder="Kita reikalinga informacija ar pageidavimai" style="height:200px"></textarea>
+        <div>
+          <label for="howcontact">Kaip norite gauti pasiūlymą:</label>
+        </div>
+        <input
+          type="checkbox"
+          id="howcontact1"
+          name="howcontact1"
+          value="email"
+        />
+        <label for="howcontact1"> El. Paštu</label><br />
+        <input
+          type="checkbox"
+          id="howcontact2"
+          name="howcontact2"
+          value="tel"
+        />
+        <label for="howcontact2"> Telefonu</label><br />
 
-    <div>
-        <label for="howcontact">Kaip norite gauti pasiūlymą:</label>
-    </div>
-        <input type="checkbox" id="howcontact1" name="howcontact1" value="email">
-    <label for="howcontact1"> El. Paštu</label><br>
-        <input type="checkbox" id="howcontact2" name="howcontact2" value="tel">
-    <label for="howcontact2"> Telefonu</label><br>
-
-        <input type="submit" value="Siųsti užklausą">
-
-    </form> 
+        <input type="submit" value="Siųsti užklausą" />
+      </form>
     </section>
-
-
-</body>
+  </body>
 </html>
